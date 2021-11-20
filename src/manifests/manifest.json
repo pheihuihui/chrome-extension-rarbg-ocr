@@ -1,0 +1,28 @@
+{
+  "name": "RARBG OCR",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "...",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rarbgprx.org/*",
+        "https://rarbg.to/*",
+        "https://proxyrarbg.org/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
